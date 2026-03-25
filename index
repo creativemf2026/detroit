@@ -1,0 +1,134 @@
+Here’s an inline SVG you can drop into HTML or an editor. It maps your Detroit STR ecosystem: you at center, feeding property, guests, casinos, platforms, and regulation.
+
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect x="0" y="0" width="900" height="600" fill="#0b1020"/>
+
+  <!-- Title -->
+  <text x="450" y="40" fill="#ffffff" font-size="22" font-family="Segoe UI" text-anchor="middle">
+    Detroit VA-Backed STR Ecosystem
+  </text>
+
+  <!-- Central Node: You / Asset -->
+  <rect x="350" y="120" width="200" height="70" rx="10" ry="10" fill="#1f3b5b" stroke="#6ec1ff" stroke-width="2"/>
+  <text x="450" y="150" fill="#ffffff" font-size="16" font-family="Segoe UI" text-anchor="middle">
+    You / Sponsor
+  </text>
+  <text x="450" y="170" fill="#c0e6ff" font-size="12" font-family="Segoe UI" text-anchor="middle">
+    VA Loan + Strategy + Renovation
+  </text>
+
+  <!-- Node: VA Loan / Financing -->
+  <rect x="80" y="90" width="200" height="70" rx="10" ry="10" fill="#14324a" stroke="#6ec1ff" stroke-width="1.5"/>
+  <text x="180" y="120" fill="#ffffff" font-size="14" font-family="Segoe UI" text-anchor="middle">
+    VA Loan / Financing
+  </text>
+  <text x="180" y="140" fill="#c0e6ff" font-size="11" font-family="Segoe UI" text-anchor="middle">
+    0% down, no PMI, purchase power
+  </text>
+
+  <!-- Arrow: VA Loan -> You -->
+  <line x1="280" y1="125" x2="350" y2="145" stroke="#6ec1ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Node: Property / Neighborhood -->
+  <rect x="350" y="230" width="200" height="80" rx="10" ry="10" fill="#14324a" stroke="#6ec1ff" stroke-width="1.5"/>
+  <text x="450" y="255" fill="#ffffff" font-size="14" font-family="Segoe UI" text-anchor="middle">
+    Property / Neighborhood
+  </text>
+  <text x="450" y="275" fill="#c0e6ff" font-size="11" font-family="Segoe UI" text-anchor="middle">
+    Downtown · Midtown · North End · West Village
+  </text>
+
+  <!-- Arrow: You -> Property -->
+  <line x1="450" y1="190" x2="450" y2="230" stroke="#6ec1ff" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Node: Renovation / Design -->
+  <rect x="80" y="230" width="200" height="80" rx="10" ry="10" fill="#14324a" stroke="#6ec1ff" stroke-width="1.5"/>
+  <text x="180" y="255" fill="#ffffff" font-size="14" font-family="Segoe UI" text-anchor="middle">
+    Renovation & Design
+  </text>
+  <text x="180" y="275" fill="#c0e6ff" font-size="11" font-family="Segoe UI" text-anchor="middle">
+    Hotel-grade baths · Keyless entry · Brand
+  </text>
+
+  <!-- Arrows: You <-> Renovation, Renovation -> Property -->
+  <line x1="350" y1="155" x2="280" y2="255" stroke="#6ec1ff" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="280" y1="270" x2="350" y2="270" stroke="#6ec1ff" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Node: Casinos / Anchor Demand -->
+  <rect x="620" y="90" width="220" height="80" rx="10" ry="10" fill="#14324a" stroke="#f6c453" stroke-width="1.5"/>
+  <text x="730" y="115" fill="#ffffff" font-size="14" font-family="Segoe UI" text-anchor="middle">
+    Casino & Event Anchors
+  </text>
+  <text x="730" y="135" fill="#ffe9b3" font-size="11" font-family="Segoe UI" text-anchor="middle">
+    MGM Grand · MotorCity · Greektown
+  </text>
+  <text x="730" y="152" fill="#ffe9b3" font-size="11" font-family="Segoe UI" text-anchor="middle">
+    Sports · Concerts · Conventions
+  </text>
+
+  <!-- Arrow: Casinos -> Property -->
+  <line x1="730" y1="170" x2="550" y2="240" stroke="#f6c453" stroke-width="1.8" marker-end="url(#arrow)"/>
+
+  <!-- Node: Guests / Demand -->
+  <rect x="620" y="230" width="220" height="80" rx="10" ry="10" fill="#14324a" stroke="#6ec1ff" stroke-width="1.5"/>
+  <text x="730" y="255" fill="#ffffff" font-size="14" font-family="Segoe UI" text-anchor="middle">
+    Guests / Demand Streams
+  </text>
+  <text x="730" y="275" fill="#c0e6ff" font-size="11" font-family="Segoe UI" text-anchor="middle">
+    Casino weekends · Events · Medical · University · Holidays
+  </text>
+
+  <!-- Arrows: Property -> Guests, Casinos -> Guests -->
+  <line x1="550" y1="270" x2="620" y2="270" stroke="#6ec1ff" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="730" y1="170" x2="730" y2="230" stroke="#f6c453" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Node: Platforms / Distribution -->
+  <rect x="350" y="360" width="200" height="80" rx="10" ry="10" fill="#14324a" stroke="#6ec1ff" stroke-width="1.5"/>
+  <text x="450" y="385" fill="#ffffff" font-size="14" font-family="Segoe UI" text-anchor="middle">
+    Platforms & Distribution
+  </text>
+  <text x="450" y="405" fill="#c0e6ff" font-size="11" font-family="Segoe UI" text-anchor="middle">
+    Airbnb · VRBO · Direct Booking · Packages
+  </text>
+
+  <!-- Arrows: Property -> Platforms, Platforms -> Guests -->
+  <line x1="450" y1="310" x2="450" y2="360" stroke="#6ec1ff" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="550" y1="400" x2="620" y2="290" stroke="#6ec1ff" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Node: Regulation / Zoning -->
+  <rect x="80" y="360" width="200" height="80" rx="10" ry="10" fill="#2a1f3b" stroke="#ff7aa2" stroke-width="1.5"/>
+  <text x="180" y="385" fill="#ffffff" font-size="14" font-family="Segoe UI" text-anchor="middle">
+    Regulation & Zoning
+  </text>
+  <text x="180" y="405" fill="#ffd0e1" font-size="11" font-family="Segoe UI" text-anchor="middle">
+    STR license · Mixed-use zones · Owner-occupied rules
+  </text>
+
+  <!-- Arrows: Regulation -> You, Regulation -> Property -->
+  <line x1="180" y1="360" x2="180" y2="310" stroke="#ff7aa2" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="280" y1="400" x2="350" y2="270" stroke="#ff7aa2" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Node: Revenue / Equity -->
+  <rect x="350" y="480" width="200" height="80" rx="10" ry="10" fill="#10402f" stroke="#6effb5" stroke-width="1.5"/>
+  <text x="450" y="505" fill="#ffffff" font-size="14" font-family="Segoe UI" text-anchor="middle">
+    Revenue & Equity Flywheel
+  </text>
+  <text x="450" y="525" fill="#c9ffe4" font-size="11" font-family="Segoe UI" text-anchor="middle">
+    ADR × Occupancy → Cash Flow → Refi / Scale
+  </text>
+
+  <!-- Arrows: Guests -> Revenue, Platforms -> Revenue, Revenue -> You -->
+  <line x1="730" y1="310" x2="550" y2="500" stroke="#6effb5" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="440" x2="450" y2="480" stroke="#6effb5" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="450" y1="480" x2="450" y2="190" stroke="#6effb5" stroke-width="1.2" stroke-dasharray="4 4" marker-end="url(#arrow)"/>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#c0e6ff"/>
+    </marker>
+  </defs>
+
+</svg>
